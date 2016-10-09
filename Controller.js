@@ -6,15 +6,13 @@ function Controller ()
 {
     Config.init ();
 
-    var output = new MidiOutput ();
-    var input = new APCMidiInput ();
-    
     this.scales = new Scales (36, 100, 8, 8);
     this.model = new Model (null, this.scales, 8, 8, 8, 6, 16, 16, true);
     
-    // this.lastSlotSelection = null;
     this.model.getTrackBank ().addTrackSelectionListener (doObject (this, Controller.prototype.handleTrackChange));
     
+    var output = new MidiOutput ();
+    var input = new MidiInput ();
     this.surface = new APC (output, input);
     this.surface.setDefaultMode (MODE_VOLUME);
 
