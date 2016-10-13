@@ -119,7 +119,9 @@ ShiftView.prototype.onGridNote = function (note, velocity)
             displayNotification ("Toggle Launcher Overdub");
             break;
         case 46:
-            this.model.getApplication ().quantize ();
+            // We can use any cursor clip, e.g. the one of the drum view
+            var view = this.surface.getView (VIEW_DRUM);
+            view.clip.quantize (Config.quantizeAmount / 100);
             displayNotification ("Quantize");
             break;
         case 38:

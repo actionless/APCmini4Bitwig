@@ -47,6 +47,17 @@ Config.init = function ()
     Config.activateScaleLayoutSetting (prefs);
 
     ///////////////////////////
+    // Play and Sequencer
+
+    Config.activateQuantizeAmountSetting (prefs);
+
+    ///////////////////////////
+    // Workflow
+
+    Config.activateBehaviourOnStopSetting (prefs);
+    Config.activateSelectClipOnLaunchSetting (prefs);
+    
+    ///////////////////////////
     // Button Control
 
     Config.faderCtrlSetting = prefs.getEnumSetting ("Fader Ctrl", "Button Control", Config.FADER_CTRL_OPTIONS, Config.FADER_CTRL_OPTIONS[0]);
@@ -62,12 +73,6 @@ Config.init = function ()
         Config.softKeys = value;
         Config.notifyListeners (Config.SOFT_KEYS);
     });
-
-    ///////////////////////////
-    // Workflow
-
-    Config.activateBehaviourOnStopSetting (prefs);
-    Config.activateSelectClipOnLaunchSetting (prefs);
 };
 
 Config.setFaderCtrl = function (faderCtrl)
