@@ -22,17 +22,11 @@ Config.sceneScrollInterval = 100;
 // Editable configurations
 // ------------------------------
 
+Config.FADER_CTRL = 20;
+Config.SOFT_KEYS  = 21;
+
 Config.FADER_CTRL_OPTIONS = [ "Volume", "Pan", "Send 1", "Send 2", "Send 3", "Send 4", "Send 5", "Send 6", "Send 7", "Send 8", "Device", "Macros" ];
 Config.SOFT_KEYS_OPTIONS  = [ "Clip Stop", "Solo", "Rec Arm", "Mute", "Select" ];
-
-Config.SCALES_SCALE          = 0;
-Config.SCALES_BASE           = 1;
-Config.SCALES_IN_KEY         = 2;
-Config.SCALES_LAYOUT         = 3;
-Config.BEHAVIOUR_ON_STOP     = 4;
-Config.SELECT_CLIP_ON_LAUNCH = 5;
-Config.FADER_CTRL            = 6;
-Config.SOFT_KEYS             = 7;
 
 Config.faderCtrl = Config.FADER_CTRL_OPTIONS[0];
 Config.softKeys  = Config.SOFT_KEYS_OPTIONS[0];
