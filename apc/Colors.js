@@ -20,6 +20,7 @@ AbstractSequencerView.COLOR_STEP_HILITE_NO_CONTENT = APC_COLOR_GREEN;
 AbstractSequencerView.COLOR_STEP_HILITE_CONTENT    = APC_COLOR_GREEN;
 AbstractSequencerView.COLOR_NO_CONTENT             = APC_COLOR_BLACK;
 AbstractSequencerView.COLOR_CONTENT                = APC_COLOR_RED;
+AbstractSequencerView.COLOR_CONTENT_CONT           = APC_COLOR_RED;
 AbstractSequencerView.COLOR_MEASURE                = APC_COLOR_YELLOW;
 AbstractSequencerView.COLOR_ACTIVE_MEASURE         = APC_COLOR_GREEN;
 
